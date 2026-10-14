@@ -11,7 +11,6 @@ const NAV_ITEMS = [
   { href: "/kadraj-yansimalari", label: "Kadraj yansımaları" },
   { href: "/kadrajin-otesi", label: "Kadrajın Ötesinde" },
   { href: "https://arsiv.mavikadraj.com.tr/", label: "Arşiv" },
-  { href: "/harita", label: "Fotoğraf Haritası" },
   { href: "/mavi-kadraj-kimdir", label: "Mavi Kadraj Kimdir" },
 ] as const;
 

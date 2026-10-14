@@ -8,11 +8,12 @@ import { ExhibitionHeader } from "@/components/ExhibitionHeader";
 import { CollectionPortal } from "@/components/CollectionPortal";
 import { ExhibitionFooter } from "@/components/ExhibitionFooter";
 import { CinematicPhotoScene } from "@/components/CinematicPhotoScene";
+import { StudioCrossPromo } from "@/components/StudioCrossPromo";
 import { collections } from "@/lib/collections";
 
 export const metadata = pageMetadata("/", "Mavi Kadraj | Doğa, Manzara ve Fotoğraf Hikâyeleri", site.description);
 
-const selected = [collections[0].images[7],collections[5].images[2],collections[6].images[3],collections[3].images[6],collections[1].images[4],collections[4].images[2],collections[2].images[1],collections[7].images[6],collections[3].images[3],collections[0].images[10]];
+const selected = [collections[0].images[7],collections[6].images[2],collections[7].images[3],collections[3].images[6],collections[1].images[4],collections[4].images[2],collections[2].images[1],collections[8].images[6],collections[3].images[3],collections[0].images[10]];
 
 export default function HomePage() {
   return (
@@ -45,7 +46,7 @@ export default function HomePage() {
         <a href="https://arsiv.mavikadraj.com.tr/" className="exhibition-more selected-frames__archive">Tüm arşivi keşfet <span aria-hidden>→</span></a>
       </section>
 
-      <CinematicPhotoScene wide={collections[7].images[8]} portrait={collections[4].images[1]} />
+      <CinematicPhotoScene wide={collections[8].images[8]} portrait={collections[4].images[1]} />
 
       <section className="waiting-story home-story" aria-labelledby="waiting-title">
         <figure className="reveal-clip"><Image src={collections[1].images[8].src} alt={collections[1].images[8].alt} fill sizes="(max-width: 700px) 100vw, 60vw" className="object-cover" /></figure>
@@ -54,9 +55,9 @@ export default function HomePage() {
 
       <section id="sunset-story" className="sunset-story" aria-labelledby="sunset-title">
         <header className="reveal-up"><span aria-hidden>✨</span><p className="exhibition-kicker">Günün kıyısında</p><h2 id="sunset-title">Işığın<br /><em>son sözü</em></h2></header>
-        <figure className="sunset-story__wide reveal-side"><Image src={collections[6].images[3].src} alt={collections[6].images[3].alt} fill sizes="100vw" className="object-cover" /></figure>
-        <figure className="sunset-story__portrait reveal-up"><Image src={collections[6].images[7].src} alt={collections[6].images[7].alt} fill sizes="(max-width: 700px) 76vw, 32vw" className="object-cover" /></figure>
-        <figure className="sunset-story__detail reveal-clip"><Image src={collections[6].images[8].src} alt={collections[6].images[8].alt} fill sizes="(max-width: 700px) 88vw, 45vw" className="object-cover" /></figure>
+        <figure className="sunset-story__wide reveal-side"><Image src={collections[7].images[3].src} alt={collections[7].images[3].alt} fill sizes="100vw" className="object-cover" /></figure>
+        <figure className="sunset-story__portrait reveal-up"><Image src={collections[7].images[7].src} alt={collections[7].images[7].alt} fill sizes="(max-width: 700px) 76vw, 32vw" className="object-cover" /></figure>
+        <figure className="sunset-story__detail reveal-clip"><Image src={collections[7].images[8].src} alt={collections[7].images[8].alt} fill sizes="(max-width: 700px) 88vw, 45vw" className="object-cover" /></figure>
         <p className="sunset-story__note script-note">Gün gider.<br />Işık biraz daha kalır.</p>
         <p className="sunset-story__verse">Gökyüzü bazen<br /><em>veda ederken güzelleşir.</em></p>
         <Link href="/gun-batimi">Gün Batımı’na bak →</Link>
@@ -68,7 +69,7 @@ export default function HomePage() {
 
       <section className="companions-story home-story" aria-labelledby="companions-title">
         <div className="home-story__copy reveal-up"><p className="exhibition-kicker">Sessizce aynı dünyada</p><h2 id="companions-title">Bir bakış,<br /><em>bütün cümlelerden uzun.</em></h2><p>Bazen en güzel portre,<br />poz vermeyi bilmeyene aittir.</p><span className="story-symbol" aria-hidden>🐕</span><Link href="/can-dostlarimiz">Can Dostlarımıza bak →</Link></div>
-        <div className="companions-story__photos"><figure className="reveal-side"><Image src={collections[5].images[2].src} alt={collections[5].images[2].alt} fill sizes="(max-width: 700px) 82vw, 34vw" className="object-cover" /></figure><figure className="reveal-up"><Image src={collections[5].images[4].src} alt={collections[5].images[4].alt} fill sizes="(max-width: 700px) 88vw, 40vw" className="object-cover" /></figure></div>
+        <div className="companions-story__photos"><figure className="reveal-side"><Image src={collections[6].images[2].src} alt={collections[6].images[2].alt} fill sizes="(max-width: 700px) 82vw, 34vw" className="object-cover" /></figure><figure className="reveal-up"><Image src={collections[6].images[4].src} alt={collections[6].images[4].alt} fill sizes="(max-width: 700px) 88vw, 40vw" className="object-cover" /></figure></div>
       </section>
 
       <section className="home-collections" aria-labelledby="home-collections-title">
@@ -78,7 +79,8 @@ export default function HomePage() {
         </div>
         <Link href="/kadraj-yansimalari" className="exhibition-more">Tüm yansımaları gör <span>→</span></Link>
       </section>
-      <section className="home-closing"><figure><Image src={collections[7].images[6].src} alt={collections[7].images[6].alt} fill sizes="100vw" className="object-cover" /></figure><div><span aria-hidden>✨</span><p>Fotoğraf bazen hatırlamak değil,<br /><em>unutmamak için çekilir.</em></p></div></section>
+      <StudioCrossPromo />
+      <section className="home-closing"><figure><Image src={collections[8].images[6].src} alt={collections[8].images[6].alt} fill sizes="100vw" className="object-cover" /></figure><div><span aria-hidden>✨</span><p>Fotoğraf bazen hatırlamak değil,<br /><em>unutmamak için çekilir.</em></p></div></section>
       <ExhibitionFooter />
     </main>
   );

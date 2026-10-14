@@ -11,7 +11,7 @@ export function ExhibitionFooter() {
       <a href="https://www.instagram.com/mavi_kadraj14/" target="_blank" rel="noreferrer"><InstagramIcon /><small>Karelerin devamı Instagram’da.</small><strong>@mavi_kadraj14</strong><span>Takip Et ↗</span></a>
       <a href="https://mustafaoner.net" target="_blank" rel="noreferrer"><small>kişisel web sitesi</small><strong>Mustafa Öner</strong><span>mustafaoner.net ↗</span></a>
     </div>
-    <nav aria-label="Alt menü"><Link href="/kadraj-yansimalari">Kadraj Yansımaları</Link><Link href="/kadrajin-otesi">Kadrajın Ötesinde</Link><a href="https://arsiv.mavikadraj.com.tr/">Fotoğraf Arşivi</a><Link href="/harita">Fotoğraf Haritası</Link><Link href="/mavi-kadraj-kimdir">Mavi Kadraj Kimdir</Link></nav>
+    <nav aria-label="Alt menü"><Link href="/kadraj-yansimalari">Kadraj Yansımaları</Link><Link href="/kadrajin-otesi">Kadrajın Ötesinde</Link><a href="https://arsiv.mavikadraj.com.tr/">Fotoğraf Arşivi</a><Link href="/mavi-kadraj-kimdir">Mavi Kadraj Kimdir</Link></nav>
     <p className="v2-footer__legal">© Mavi Kadraj</p>
   </footer>;
 }

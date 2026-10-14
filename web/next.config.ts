@@ -4,6 +4,15 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   /* Dev’de Strict Mode bileşeni iki kez mount eder; canvas/kar katmanı ile bazen lokal titreme. Prod’da çift mount zaten yok. */
   reactStrictMode: false,
+  async redirects() {
+    return [
+      {
+        source: "/harita",
+        destination: "/kadraj-yansimalari",
+        statusCode: 301,
+      },
+    ];
+  },
   images: {
     remotePatterns: [
       {
