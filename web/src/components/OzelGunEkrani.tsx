@@ -183,7 +183,7 @@ export default function OzelGunEkrani() {
       role="dialog"
       aria-modal="true"
       aria-label={gun.ad}
-      style={{ ["--ozel-gun-sure" as string]: `${toplam}ms`, ["--ozel-gun-gecen" as string]: `-${gecen}ms` }}
+      style={{ ...(gun.arkaplan ? { background: gun.arkaplan } : {}), ["--ozel-gun-sure" as string]: `${toplam}ms`, ["--ozel-gun-gecen" as string]: `-${gecen}ms` }}
     >
       <picture className="ozel-gun__picture">
         <source media="(max-width: 720px), (orientation: portrait)" srcSet={gun.gorsel.mobil} />

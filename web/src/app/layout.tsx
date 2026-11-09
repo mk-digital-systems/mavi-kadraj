@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Outfit, Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 import { site } from "@/lib/site";
-import RepublicWelcome from "@/components/RepublicWelcome";
 import OzelGunEkrani from "@/components/OzelGunEkrani";
 
 /** Genel site OG — public/images/mavi-kadraj-og.jpg */
@@ -88,7 +87,6 @@ export default function RootLayout({
       <body className="relative min-h-[100dvh] overflow-x-clip antialiased">
         <div className="mk-grain" aria-hidden />
         <div className="relative z-10 flex min-h-[100dvh] flex-col">{children}</div>
-        <RepublicWelcome />
         <OzelGunEkrani />
       </body>
     </html>

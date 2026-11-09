@@ -24,6 +24,8 @@ export type OzelGun = {
   ilkGirisMs: number;
   /** İsteğe bağlı: bu saatte, hangi sayfada olursa olsun herkese süre boyunca gösterilir (kapatılamaz). */
   saatliGosterim?: { ay: number; gun: number; saat: number; dakika: number; sureMs: number };
+  /** İsteğe bağlı: görselin arkasındaki renk (varsayılan siyah). */
+  arkaplan?: string;
   gorsel: { masaustu: string; mobil: string; alt: string };
 };
 

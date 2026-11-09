@@ -1,5 +1,6 @@
 import type { OzelGun } from "./schedule";
 import { ON_KASIM } from "./10-kasim";
+import { YIRMI_DOKUZ_EKIM } from "./29-ekim";
 
 /**
  * Özel günler listesi. Yeni özel gün eklemek için:
@@ -8,4 +9,4 @@ import { ON_KASIM } from "./10-kasim";
  * 3. aşağıya ekleyin. Her gün her yıl otomatik tekrarlanır.
  * İki özel günün aralığı çakışmamalıdır (aynı anda yalnızca biri gösterilir).
  */
-export const OZEL_GUNLER: OzelGun[] = [ON_KASIM];
+export const OZEL_GUNLER: OzelGun[] = [YIRMI_DOKUZ_EKIM, ON_KASIM];
