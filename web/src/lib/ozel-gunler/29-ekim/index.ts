@@ -1,9 +1,11 @@
 import type { OzelGun } from "../schedule";
+import masaustu from "./masaustu.png";
+import mobil from "./mobil.png";
 
 /**
  * 29 Ekim — Cumhuriyet Bayramı. Her yıl:
  * 28 Ekim 22:00 – 29 Ekim 23:59 arasında siteye ilk girişte 10 saniye (kapatılabilir).
- * Görseller: public/images/ozel-gunler/29-ekim/
+ * Görseller bu klasörde: masaustu.png, mobil.png
  */
 export const YIRMI_DOKUZ_EKIM: OzelGun = {
   id: "29-ekim",
@@ -12,8 +14,8 @@ export const YIRMI_DOKUZ_EKIM: OzelGun = {
   ilkGirisMs: 10_000,
   arkaplan: "#160000",
   gorsel: {
-    masaustu: "/images/ozel-gunler/29-ekim/masaustu.png",
-    mobil: "/images/ozel-gunler/29-ekim/mobil.png",
+    masaustu: masaustu.src,
+    mobil: mobil.src,
     alt: "Türkiye Büyük Millet Meclisi kürsüsünde Mustafa Kemal Atatürk; Türk bayraklarıyla 29 Ekim Cumhuriyet Bayramı kutlama afişi.",
   },
 };
